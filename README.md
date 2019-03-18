@@ -18,7 +18,7 @@ The application will run on web browser at:
 
     http://localhost:8090/
 
-Open your web browser access the local above mentioned and using three screen resolution
+Open your web browser to access the local above mentioned and using three screen resolution
 that show the aplication:
 
 - WVGA  (set web browser width to 768px)
@@ -50,7 +50,7 @@ The application will run on web browser at:
 
     http://localhost:8090/
 
-Open your web browser access the local above mentioned and using three screen resolution
+Open your web browser to access the local above mentioned and using three screen resolution
 that show the aplication:
 
 -WVGA  (set web browser width to 768px)
