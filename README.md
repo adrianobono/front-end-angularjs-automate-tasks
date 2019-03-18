@@ -64,8 +64,7 @@ File eported at: ./web/src/js/min/app.js
 
 # Test
 
-Open your web browser  to access the local above mentioned and use three screen resolution
-that show the aplication:
+Open a third command terminal.
 
 Type the command below and press enter
 
