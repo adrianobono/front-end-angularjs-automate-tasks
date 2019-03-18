@@ -1,0 +1,11 @@
+{
+  "name": "cinqtest",
+  "version": "1.7.8",
+  "license": "MIT",
+  "main": "./index.html",
+  "ignore": [],
+  "dependencies": {
+    "angular": "1.7.8",
+    "angular-route": "1.7.8"
+  }
+}

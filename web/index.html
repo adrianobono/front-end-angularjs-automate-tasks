@@ -2,17 +2,16 @@
 <html ng-app="test">
 
 <head>
-
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
   <title>Test Cinq</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./src/css/style.css" />
-  
-  <script data-require="angular.js@1.5.x" src="./src/main/webapp/bower_components/angular.min.js" data-semver="1.5.11"></script>                                                
-  <script src="./src/js/app.js"></script>
 
+  <script src="./bower_components/angular/angular.min.js"></script>
+               
+  <script src="./src/js/app.js"></script>
 </head>
 
 <body ng-controller="MainCtrl as ctrl">
@@ -27,17 +26,19 @@
     
     <div class="content-list" ng-repeat="pearson in ctrl.array_1">
         <img class="user-logo" src="/src/imgs/user.svg" />
-        <span class="user-name" >
+        <span class="user-name">
           {{' ' + pearson.name}}
         </span>
         <span class="show-hide" ng-model="check"  ng-click="check=!check">
           Show Info
-          <span ng-show="!check">+</span>
-          <span ng-show="check">&#8722</span>
+            <span ng-show="!check">+</span>
+            <span ng-show="check">&#8722</span>
         </span>
 
         <section class="comments" ng-show="check">
+
           <ul class="user-info">
+
             <li class="comment" >
               {{pearson.disclosableInfo}}
             </li>

@@ -1,47 +1,86 @@
-# front-end-angularjs-automate-tasks
+# front-end-angularjs-automate-tasks using Java and Node.js
 
-Enclosed in this project, lies a small Java application that expose a 
-REST service that returns a list of People.
+# 1 - Java Application
 
-This service can be reached using the following URL:
+Requirements: JDK 8.0 and Maven correctly installed
 
-    http://localhost:8090/rest/people
+Open a command terminal and access the root directory of this project.
 
-It will return a JSON object. To run the service, you will need to build the application.
-For that, you will need to install Java JDK and Maven.
-
-After you sucessfully installed everything, just open a command and run:
-
+First: Type the command below and press enter
 
     mvn clean package
-    
-To run, either call Java or run Maven
 
-    java -jar target/people-rest.war
-    
-or
+Second: Type the command below and press enter
 
     mvn spring-boot:run
+
+The application will run on web browser at:
+
+    http://localhost:8090/
+
+Open your web browser access the local above mentioned and using three screen resolution
+that show the aplication:
+
+- WVGA  (set web browser width to 768px)
+- HD   (set web browser width to 1280px)
+- Full HD (set web browser width to 1920px)
+
+*Using another resolutions a warn will showed.
+
+# 2 - Node.js Application
+
+Requirements: Node.js, Bower and Protractor correctly installed
+
+Open a command terminal and access the root directory /web of this project.
+
+First: Type the command below and press enter
+
+     bower install
+
+Second: Type the command below and press enter
+
+    npm install
+
+Third: Type the command below and press enter
+
+    npm start
     
-## Proposed Exercise
 
-Create an app to present the resulting data from the REST service. The way you present is up to you, as long you follow the premises.
+The application will run on web browser at:
 
-Premises:
-* DO NOT USE *\<table\>*
-* The application must be implemented using _AngularJS_. 
-* The application must be _Responsive_.
-* The application must be presented in only three resolutions: _Full HD_, _HD_ and _Wide VGA_. 
-* Do _not_ use any _layout frameworks_ like Bootstrap, Foundation, etc. Implement your own solution. Feel free to use other frameworks for UX 
-* You are free to change the application included in every aspect.
+    http://localhost:8090/
 
-## Challenges
+Open your web browser access the local above mentioned and using three screen resolution
+that show the aplication:
 
-1. Minify using the Automation Tool of your choice, except MAVEN plugins.
-2. Replace the Java Application by one written using Node.js _or_ ...
-3. ...automate test using an end-to-end test framework for AngularJS. 
+-WVGA  (set web browser width to 768px)
+-HD   (set web browser width to 1280px)
+-Full HD (set web browser width to 1920px)
 
+*Using another resolutions a warn message will showed.
 
-## Measuring results
-Send the exact instructions on how to install dependencies, compile and run
-the application, in a way even a newbie would understand. 
+# Minify works automatically when Node.js server starts 
+File eported at: ./web/src/js/min/app.js
+
+# Test
+
+Open your web browser  to access the local above mentioned and use three screen resolution
+that show the aplication:
+
+Type the command below and press enter
+
+    webdriver-manager start
+
+Open a third command terminal and access the root directory /web/test/end-to-end of this project.
+
+Type the command below and press enter
+
+    protractor config.js
+    
+
+> A simple test will open a resized web browser
+> to 768px (width) with the application running
+> and the test will check the page title first 
+> and then simulates a click on the first user
+> of list to show more information about user.
+>Finally, the test will wait for 3 seconds and close the web browser.
