@@ -64,7 +64,7 @@ File eported at: ./web/src/js/min/app.js
 
 # Test
 
-Open a third command terminal.
+Open a second command terminal.
 
 Type the command below and press enter
 
