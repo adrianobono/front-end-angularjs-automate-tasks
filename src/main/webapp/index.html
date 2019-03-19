@@ -9,43 +9,44 @@
   <title>Test Cinq</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./src/css/style.css" />
-                                       
-  <script data-require="angular.js@1.5.x" src="./src/js/angular.min.js" data-semver="1.5.11"></script>   
+
+  <script data-require="angular.js@1.5.x" src="./src/js/angular.min.js" data-semver="1.5.11"></script>
   <script src="./src/js/app.js"></script>
 
 </head>
 
 <body ng-controller="MainCtrl as ctrl">
   <div class="war-view">
-    <h4 >Resuoltions available: Full HD (1920), HD (1280) and Wide VGA (768) </h4> 
+    <h4>Resuoltions available: Full HD (1920), HD (1280) and Wide VGA (768) </h4>
   </div>
   <div class="container">
     <div class="app-title">
-      <img class="users-logo" src="/src/imgs/users.svg"  />
-      <h2>Users list <h2>
+      <img class="users-logo" src="/src/imgs/users.svg" />
+      <h2>Users list </h2>
     </div>
-    
-    <div class="content-list" ng-repeat="pearson in ctrl.array_1">
+
+      <div class="content-list" ng-repeat="pearson in ctrl.array_1">
         <img class="user-logo" src="/src/imgs/user.svg" />
-        <span class="user-name" >
+        <span class="user-name">
           {{' ' + pearson.name}}
         </span>
-        <span class="show-hide" ng-model="check"  ng-click="check=!check">
-          Show Info
+        <span class="show-hide" ng-model="check" ng-click="check=!check">
+          Show Info   
           <span ng-show="!check">+</span>
           <span ng-show="check">&#8722</span>
         </span>
 
         <section class="comments" ng-show="check">
           <ul class="user-info">
-            <li class="comment" >
+            <li class="comment">
               {{pearson.disclosableInfo}}
             </li>
           </ul>
         </section>
       </div>
+  </div>
 
-    
+
 
 
 </body>
